@@ -4,8 +4,11 @@ import { fakeConversation } from '../../fakeData/fakeConversation'
 import CardConversation from '../../components/CardConversation/CardConversation'
 import styles from './style'
 import BarInput from '../../components/BarInput/BarInput'
+import { useNavigation, useRoute } from '@react-navigation/native'
 
-const MessageDetail = ({route,navigation}) => {
+const MessageDetail = () => {
+  const navigation=useNavigation()
+  const route =useRoute()
     const {item}=route.params
     useEffect(()=>{
         navigation.setOptions({title:item.fullname})

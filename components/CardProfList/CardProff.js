@@ -8,7 +8,10 @@ const CardProff = ({item}) => {
       <Image style={styles.img} source={{uri:`${item.img}`}} />
       <View style={styles.infos}>
         <Text style={styles.nom}>{item.nom}</Text>
-        <Text style={styles.specialite}>{item.speciality}</Text>
+        <View style={styles.specialite}>
+         <Text style={styles.spe} >{item.speciality}</Text>
+         </View>
+       
       </View>
     </TouchableOpacity>
   )

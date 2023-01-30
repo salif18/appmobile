@@ -10,8 +10,8 @@ const styles =StyleSheet.create({
       backgroundColor:'#fff'
   },
   img:{
-      width:80,
-      height:80,
+      width:70,
+      height:70,
       borderRadius:'100%',
       padding:5,
       borderColor:'rgb(0,210,250)',
@@ -26,18 +26,22 @@ const styles =StyleSheet.create({
   nom:{
     fontSize:16,
     fontWeight:'bold',
-    padding:10,
+    margin:10
 
   },
   specialite:{
-    fontSize:14,
-    fontWeight:'bold',
+    width:100,
     backgroundColor:'rgb(0, 183, 255)',
     padding:5,
     borderRadius:10,
-    borderWidth:1,
     borderColor:'rgb(0, 183, 255)',
     color:'#f7f7f7'
+  },
+  spe:{
+    color:'#fff', 
+    fontSize:14,
+    fontWeight:'bold',
+    marginLeft:15
   }
 })
 

@@ -10,6 +10,8 @@ import CardCategory from '../../components/CardCategory/CardCategory'
 import { fakeProf } from '../../fakeData/fakeProf'
 import CardProff from '../../components/CardProfList/CardProff'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+
+
 const Home = ({navigation}) => {
   const [all ,setAll] = useState(3)
 
@@ -20,15 +22,19 @@ const Home = ({navigation}) => {
   setAll(3)
  }
 
- useEffect(()=>{
-  navigation.setOptions({title:'Facebook'})
- },[])
+
   return (
     <ScrollView>
       {/* Header */}
       <View style={styles.header}>
-         <Text style={styles.headerName}>Prof Salif M konate</Text>
-         <Image style={styles.headerImage} source={require('../../assets/imgProfile/profil.jpeg')} />
+        <TouchableOpacity
+         onPress={()=>navigation.navigate('Login')}
+        >
+        <MaterialCommunityIcons name='account' style={{color:'rgb(0,0,30)'}} size={30}/>
+        </TouchableOpacity>
+
+        {/*<Text style={styles.headerName}>Prof Salif M konate</Text>
+         <Image style={styles.headerImage} source={require('../../assets/imgProfile/profil.jpeg')} />*/}
       </View>
       {/*fin de header*/ }
 

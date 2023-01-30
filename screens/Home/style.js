@@ -7,7 +7,9 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         alignItems:'center',
         backgroundColor:'#fff',
-        height:60
+        height:60,
+        borderTopWidth:1,
+        borderColor:'rgb(0,210,250)'
 
     },
     headerImage:{

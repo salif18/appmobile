@@ -9,16 +9,14 @@ const Tab =  createMaterialBottomTabNavigator()
 const ButtomTab=()=>{
     return (
         <Tab.Navigator
-          initialRouteName="home"
-          activeColor="#3345"
-          
-          barStyle={{ backgroundColor: 'rgb(0, 210, 255)',height:80}}
+          initialRouteName="login"
+          barStyle={{ backgroundColor: 'rgb(0, 210, 255)', height:80}}
         >
           <Tab.Screen
             name="home"
             component={Home}
             options={{
-              tabBarLabel: 'Home',
+              tabBarLabel: 'Tableau de bord',
               tabBarIcon: () => (
                 <MaterialCommunityIcons name="home" color={'#f7f7f7'} size={26} />
               ),
@@ -38,7 +36,7 @@ const ButtomTab=()=>{
             name="profile"
             component={Profile}
             options={{
-              tabBarLabel: 'Profile',
+              tabBarLabel: 'Profil',
               tabBarIcon: () => (
                 <MaterialCommunityIcons name="account" color={'#f7f7f7'} size={26} />
               ),
